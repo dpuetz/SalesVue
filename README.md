@@ -64,16 +64,11 @@ npm run format       # Prettier over src/
 
 ## Environment Variables
 
-Variables live in `.env.development` and `.env.production` and must be prefixed `VITE_` to be exposed to the client.
+Variables live in `.env.development` must be prefixed `VITE_` to be exposed to the client.
 
 ```
 VITE_API_BASE=http://localhost:5276/api                  # dev
-VITE_API_BASE=https://takemetoyourdata.com/salesApi/api  # prod
 ```
-
-Access them in code via `import.meta.env.VITE_API_BASE`.
-
-The Vite base path is `/salesUI/` (set in `vite.config.ts`) — the app is served under that subpath in production.
 
 ## Project Structure
 
